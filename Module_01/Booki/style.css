@@ -8,13 +8,34 @@ max-width: 1440px;
 height: 1884px;
 
 background: #FFFFFF;
-
-
 }
 
-.flex{
-    display: flex;
+h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
 
+h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.recherche-form{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 32px;
 }
 
 body {
@@ -48,11 +69,12 @@ body {
     display: block;
     text-align:center;
     text-decoration: none;
-    color: #0065FC;
+    color: black;
 }
 
 .nav a:hover{
     text-decoration: underline;
+    color:#0065FC;
 }
 
 
@@ -94,23 +116,33 @@ color: #0065FC;
 }
 .recherche{
    border: 0px;
-    width: 132px;
+ 
     height: 49px; 
     text-align: center; 
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+
 }
 
 .icone-recherche{
+    display: flex;
+
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     width: 50px;
     height: 49px;
 }
+.icone-recherche > i {
+    margin: auto;
+}
 
 .filter{
     display: flex;
     border-radius: 12px;
-    justify-content: space-between;
+    
     align-items: center;
 }
 
@@ -132,10 +164,16 @@ color: #0065FC;
     font-weight: 700;
     width: 226px;
     height: 50px;
+    margin: 0 20px 0 20px;
 
 
 }
-.filter-button .fa-heart , .fa-dog, .fa-person, .fa-money-bill-wave {
+
+.filter-button:hover {
+    background-color: #DEEBFF;
+}
+
+.filter-button .fa-heart , .fa-dog, .fa-person, .fa-money-bill-wave, .fa-chart-line {
     color: #0065FC;
 }
 
@@ -161,14 +199,17 @@ color: #0065FC;
 .resultats-recherche{
     display: flex;
     justify-content: space-between;
+  
+   margin-bottom: 30px;
 }
 
 .global-cards{
-    padding: 0px 40px 0px 40px;
+    padding: 0px 40px 40px 40px;
+    margin-right: 38px;    
     display: flex;
     flex-direction: column;
     width: 880px;
-    height: 626px;
+    
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -177,21 +218,28 @@ color: #0065FC;
     display: flex;
     flex-direction: column;
     width: 420px;
-    height: 625px;
+   
     background-color: #F2F2F2;
     border-radius: 20px;
+    
+}
+.global-cards2 .titre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .afficher-cards1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
         
     align-content: space-between;
 }
 .card1{
     width: 246px;
-    
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -216,6 +264,10 @@ color: #0065FC;
     padding-left: 16px;
     margin: 9px 0 9px 0;
 }
+.card1 > i {
+    padding-left: 16px;
+    margin: 9px 0 9px 0;
+}
 
 .stars{
     padding-left: 16px;
@@ -232,15 +284,65 @@ color: #0065FC;
     display: flex;
     background-color: white;
     border-radius: 20px;
+    margin-bottom: 34px;
+   
 }
 
 .card-horizontal > .card-description{
     display: flex;
     flex-direction: column;   
+    
 }
 .image-card-horizontal {
     width: 137px;
     height: 144px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
+    
 }
+
+.liste-activites{
+    display: flex;
+    justify-content: space-between;
+}
+.item-activite{
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #D9D9D9 
+}
+ .item-activite > img {
+    width: 302px;
+    height: 444px;
+    border-radius: 20px 20px 0 0;
+ }
+
+ .item-activite > p {
+    margin-left: 19px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+ }
+ footer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    height: 225px;
+ }
+ 
+ footer  div {
+    display: flex;
+    flex-direction: column;    
+ }
+ footer  div  h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+ }
+ footer  div  a {
+    text-decoration: none;
+    color: #000000;
+ }
