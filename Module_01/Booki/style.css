@@ -1,13 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-.container {
-position: relative;
-width: 100%;
-max-width: 1640px;
-height: 1884px;
 
-background: #FFFFFF;
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+.container {
+    position: relative;
+
+    max-width: 1440px;
+    height: 1884px;
+    margin: auto;
+    background: #FFFFFF;
+
+    font-family: 'Raleway', sans-serif;
+    margin-left: 55px;
 }
 
 h3 {
@@ -38,10 +49,6 @@ p {
     margin-bottom: 32px;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    margin-left: 55px;
-}
 
 .nav ul {
     margin: 0px;
@@ -59,12 +66,15 @@ body {
 }
 
 .menu{
+    
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .nav a {
+   
     padding: 1em;
     display: block;
     text-align:center;
@@ -84,7 +94,8 @@ position: absolute;
 width: 61.09px;
 height: 19px;
 left: 0px;
-top: 0px;
+
+
 
 }
 
@@ -144,6 +155,7 @@ color: #0065FC;
     border-radius: 12px;    
     align-items: center;
     flex-wrap: wrap;
+    
    
 }
 
@@ -167,8 +179,6 @@ color: #0065FC;
     width: 226px;
     height: 50px;
     margin: 0 20px 0 20px;
-
-
 }
 
 .filter-button:hover {
@@ -199,13 +209,16 @@ color: #0065FC;
     display: flex;
 }
 .resultats-recherche{
+    
     display: flex;
     justify-content: space-between;  
     margin-bottom: 30px;
-    flex-wrap: wrap;
+    
 }
 
 .global-cards{
+    width: 800px;
+    
     padding: 0px 40px 40px 40px;
     margin-right: 38px;    
     display: flex;
@@ -214,13 +227,14 @@ color: #0065FC;
     
     background-color: #F2F2F2;
     border-radius: 20px;
+   
 }
 .global-cards2{
+    width: 420px;    
     padding: 0px 37px 0px 37px;
     display: flex;
     flex-direction: column;
-    width: 320px;
-   
+    
     background-color: #F2F2F2;
     border-radius: 20px;
     
@@ -235,19 +249,20 @@ color: #0065FC;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-        
-    align-content: space-between;
+    
+    
 }
 .card1{
-    width: 246px;
+    
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     background-color: white;
 
 }
+
 .image-card{
     width: 236px;
     height: 124px;
@@ -264,7 +279,7 @@ color: #0065FC;
 }
 .card1 > p {
     padding-left: 16px;
-    margin: 9px 0 9px 0;
+    margin: 0px 0px;
 }
 .card1 > i {
     padding-left: 16px;
@@ -280,19 +295,19 @@ color: #0065FC;
     color: #0065FC;
     width: 12px;
     height: 12px;
-    padding-left: 5px;
+    margin-left: 5px;
 }
 .card-horizontal{
     display: flex;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
    
 }
 
-.card-horizontal > .card-description{
+.card-horizontal .card-description{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
     
 }
 .image-card-horizontal {
@@ -351,3 +366,197 @@ color: #0065FC;
     text-decoration: none;
     color: #000000;
  }
+
+
+ @media all and (max-width: 1024px)
+{
+    body{
+        width: auto;
+        
+    }
+
+
+
+    .filter{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .resultats-recherche{  
+        flex-wrap: wrap;
+    }
+    .global-cards{
+        width: auto;
+        margin-bottom: 30px;
+        margin-right: 72px;
+    }
+    .image-card{
+        width: 246px;
+    }
+    .global-cards2{
+        width: auto;
+        margin-right: 72px;
+       
+        
+    }
+    .cards-horizontal {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-horizontal{
+        margin-right: 30px;        
+    }
+    .card-description h5 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .card-description p {
+        margin-bottom: 0px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #000000;
+    }
+    .card-description i {
+        margin-top: 50px;
+    }
+    .card-horizontal img{
+        width: 106px;
+            }
+
+
+
+    .liste-activites{
+        
+    }
+
+    .item-activite{
+      
+    }
+    .item-activite img {
+        width: 182px;
+        height: 267px;
+    }
+
+
+    .liste-activites .item-activite:last-child {
+        margin-right: 72px;
+    }
+}
+
+
+@media all and (max-width: 700px)
+{
+
+
+    .container{
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+.sous-titre{
+    text-align: center;
+}
+    .recherche-form{
+        width: 100%;        
+        justify-content: center;
+    }
+
+    .filter{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .filter div{
+        display: flex;
+
+    }
+    .h4-filter{
+        width: 100%;
+        text-align: center;
+    }
+    .filter-button{
+        
+        margin-bottom: 10px;
+    }
+
+    .resultats-recherche{  
+        
+        flex-wrap: wrap-reverse;
+
+    }
+    .global-cards{
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: #FFFFFF;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+    .afficher-cards1{
+      width: 100%;
+    }
+    .card1{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .image-card{
+        width: 100%;
+    }
+    .global-cards2{
+        width: 100%;
+        flex-direction: column;           
+        margin: 0 0 30px 0;
+        padding: 0 0 0 0;
+        border-radius: 0px;
+        
+    }
+    .cards-horizontal {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card-horizontal{
+        margin-right: 30px;        
+    }
+    .card-description h5 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .card-description p {
+        margin-bottom: 0px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #000000;
+    }
+    .card-description i {
+        margin-top: 50px;
+    }
+    .card-horizontal img{
+        width: 106px;
+            }
+
+
+
+    .liste-activites{
+        flex-direction: column;
+    }
+
+    .item-activite{
+      width: 100%;
+    }
+    .item-activite img {
+        width: 100%;
+        height: 190px;
+    }
+
+    footer div{
+        width: 100%;
+        text-align: left;
+        padding-left: 33px;
+    }
+  
+}
