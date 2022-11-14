@@ -13,7 +13,7 @@
     position: relative;
 
     max-width: 1440px;
-    height: 1884px;
+   
     margin: auto;
     background: #FFFFFF;
 
@@ -175,8 +175,8 @@ color: #0065FC;
     color: black;
     line-height: 20px;
     font-size: 17px;
-   
-    width: 226px;
+   padding: 0 20px 0 20px;
+    max-width: 226px;
     height: 50px;
     margin: 0 20px 0 20px;
 }
@@ -321,7 +321,7 @@ color: #0065FC;
 .liste-activites{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+   
 }
 .item-activite{
     background: #FFFFFF;
@@ -370,16 +370,23 @@ color: #0065FC;
 
  @media all and (max-width: 1024px)
 {
-    body{
-        width: auto;
-        
+    .container{
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
     }
-
-
+    
 
     .filter{
-        justify-content: space-between;
+        justify-content:flex-start;
         flex-wrap: nowrap;
+        max-width: 100%;
+    }
+
+    .buttons-filter-group{
+        display: flex;
+        
+        
     }
 
     .resultats-recherche{  
@@ -388,16 +395,17 @@ color: #0065FC;
     .global-cards{
         width: auto;
         margin-bottom: 30px;
-        margin-right: 72px;
+       
     }
     .image-card{
         width: 246px;
     }
+    .global-cards{
+        margin: 0 0 30px 0;
+    }
+
     .global-cards2{
-        width: auto;
-        margin-right: 72px;
-       
-        
+        width: 100%;
     }
     .cards-horizontal {
         width: auto;
@@ -426,24 +434,11 @@ color: #0065FC;
         width: 106px;
             }
 
-
-
-    .liste-activites{
-        
-    }
-
-    .item-activite{
-      
-    }
     .item-activite img {
         width: 182px;
         height: 267px;
     }
 
-
-    .liste-activites .item-activite:last-child {
-        margin-right: 72px;
-    }
 }
 
 
@@ -451,10 +446,15 @@ color: #0065FC;
 {
 
 
-    .container{
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-    }
+.container{
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.menu{
+    flex-direction: column;
+}
 
 .sous-titre{
     text-align: center;
@@ -477,8 +477,16 @@ color: #0065FC;
         width: 100%;
         text-align: center;
     }
+
+    .buttons-filter-group{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: center;
+       
+    }
     .filter-button{
-        
+        max-width: 150px;
+        height: 50px;
         margin-bottom: 10px;
     }
 
