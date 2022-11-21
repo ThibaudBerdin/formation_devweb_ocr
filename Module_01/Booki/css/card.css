@@ -133,15 +133,19 @@
   justify-content: space-between;
   width: 100%;
 }
-
-.item-activite {
+.liste-activites a {
+  text-decoration: none;
   width: 22%;
+}
+.item-activite {
+  width: 100%;
   background: #ffffff;
   border-radius: 20px 20px 20px 20px;
   
   margin-bottom: 30px;
   box-shadow: 0 0 5px #0000001c;
 }
+
 
 .item-activite > img {
   width: 100%;
@@ -189,7 +193,7 @@
   }
 
   .card-horizontal {
-    margin-bottom: 0;
+
     margin-right: 15px;
   }
 
@@ -263,6 +267,7 @@
   .card1 {
     width: 100%;
     border-radius: 20px;
+    box-shadow: 0 0 5px #0000001c;
 
   }
 
@@ -328,6 +333,9 @@
   }
 
   .item-activite {
+    width: 100%;
+  }
+  .liste-activites a {
     width: 100%;
   }
 
