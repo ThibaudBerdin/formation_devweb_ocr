@@ -14,20 +14,17 @@
 
 .global-cards {
   width: 800px;
-
-  padding: 0px 40px 40px 40px;
+  padding: 0 40px 40px 40px;
   margin-right: 38px;
   display: flex;
   flex-direction: column;
-  width: 880px;
-
   background-color: #f2f2f2;
   border-radius: 20px;
 }
 
 .global-cards2 {
   width: 420px;
-  padding: 0px 37px 0px 37px;
+  padding: 0 37px 0 37px;
   display: flex;
   flex-direction: column;
 
@@ -211,7 +208,7 @@
   }
 
   .card-description p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
