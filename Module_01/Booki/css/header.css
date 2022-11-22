@@ -27,6 +27,7 @@ div .logo {
   text-align: center;
   text-decoration: none;
   color: black;
+  border-top: white solid 2px;
 }
 
 .nav a:hover {
@@ -46,6 +47,8 @@ div .logo {
 
   .nav a {
     flex-grow: 2;
+    border-top: 0;
+    border-bottom: 2px solid #d9d9d9;
   }
   .nav a:hover {
     color: #0065fc;
