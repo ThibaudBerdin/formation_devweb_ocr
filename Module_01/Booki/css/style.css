@@ -23,7 +23,7 @@ body {
 }
 
 h3 {
-  font-family: "Raleway";
+  font-family: "Raleway", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -44,6 +44,7 @@ p {
   line-height: 19px;
 }
 
+
 .recherche-form {
   display: flex;
   margin-top: 20px;
@@ -51,7 +52,7 @@ p {
 }
 
 .lien {
-  font-family: "Raleway";
+  font-family: "Raleway", serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -111,6 +112,8 @@ p {
 
 .buttons-filter-group {
   display: flex;
+  width: 75%;
+
 }
 
 .filter-button {
@@ -119,11 +122,11 @@ p {
   background-color: white;
   color: black;
   line-height: 20px;
-  font-size: auto;
+
   padding: 0 20px 0 20px;
-  max-width: 226px;
+  width: 25%;
   height: 50px;
-  margin: 0 5px 0 5px;
+  margin: 0 7px 0 7px;
 }
 
 .filter-button:hover {
@@ -149,7 +152,7 @@ p {
 
 .info-span {
   justify-content: center;
-  align-content: center;
+  padding: 2px;
   width: 24px;
   height: 24px;
   background-color: white;
@@ -199,6 +202,7 @@ footer div a {
 
   .buttons-filter-group {
     display: flex;
+    width: 100%;
   }
 }
 
@@ -232,6 +236,7 @@ footer div a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
   }
 
   .filter-button {
