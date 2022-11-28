@@ -20,6 +20,7 @@ body {
     background: var(--main-bg-color);
     font-family: "Raleway", sans-serif;
     margin-left: 55px;
+    margin-right: 55px;
 }
 
 h1 {
@@ -64,11 +65,8 @@ p {
     font-size: 16px;
     line-height: 19px;
     /* identical to box height */
-
     text-align: center;
-
     /* Blue */
-
     color: #0065fc;
 }
 
@@ -83,13 +81,23 @@ p {
 }
 
 .recherche {
-    border: 0;
     height: 49px;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     padding: 0 35px 0 35px;
+    border: 0;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.recherche:focus {
+    outline: none;
+}
+
+.button-recherche-mobile {
+    display: none;
 }
 
 .icone-recherche {
@@ -120,6 +128,7 @@ p {
 .buttons-filter-group {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .filter-button {
@@ -220,13 +229,39 @@ footer div a {
         padding: 0 0 0 0;
     }
 
+
     .sous-titre {
-        text-align: center;
+        font-weight: bold;
+        margin-left: 30px;
     }
 
     .recherche-form {
         width: 100%;
         justify-content: center;
+    }
+
+    .recherche {
+        width: 70%;
+    }
+
+    .recherche-form .button {
+        display: none;
+    }
+
+    .icone-recherche {
+        width: 10%;
+    }
+
+    .button-recherche-mobile {
+        display: block;
+        background-color: #0065fc;
+        border-radius: 0px 12px 12px 0px;
+        border: 0;
+        height: 49px;
+        text-align: center;
+        color: white;
+        padding: 0 20px;
+        width: 10%;
     }
 
     .filter {
@@ -252,12 +287,16 @@ footer div a {
         margin-bottom: 10px;
         width: 45%;
         text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
     }
 
     .info {
         display: flex;
 
-        margin-left: 10px;
+        margin-left: 30px;
     }
 
     .info-span {
