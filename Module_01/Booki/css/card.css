@@ -85,7 +85,7 @@
 .stars {
     padding-left: 16px;
     margin: 9px 0 9px 0;
-    display: flex;
+   /* display: flex;*/
 }
 
 .fa-star {
