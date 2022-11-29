@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;0,900;1,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
 
 h1 {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 22px;
     line-height: 26px;
 }
@@ -39,7 +39,7 @@ h3 {
 
 h4 {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 22px;
     line-height: 26px;
 }
@@ -123,12 +123,13 @@ p {
 .h4-filter {
     font-size: 18px;
     line-height: 21px;
+    font-weight: 600;
 }
 
 .buttons-filter-group {
     display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 20px;
+
 }
 
 .filter-button {
@@ -140,6 +141,8 @@ p {
     white-space: nowrap;
     padding: 0 30px 0 30px;
     height: 50px;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 
@@ -194,7 +197,7 @@ footer div {
 
 footer div h3 {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18px;
     line-height: 21px;
 }
@@ -219,6 +222,8 @@ footer div a {
     .buttons-filter-group {
         display: flex;
         width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
 
@@ -307,5 +312,15 @@ footer div a {
         width: 100%;
         text-align: left;
         padding-left: 30px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .buttons-filter-group {
+        gap: 15px;
+    }
+
+    .filter-button {
+        width: 100%;
     }
 }
