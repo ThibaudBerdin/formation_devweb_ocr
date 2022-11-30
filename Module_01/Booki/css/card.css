@@ -9,10 +9,7 @@
     text-decoration: none;
     color: #000000;
 
-
 }
-
-
 .global-cards {
     width: 800px;
     padding: 0 40px 40px 40px;
@@ -75,8 +72,6 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 18px;
-    font-weight: 600;
     padding-left: 16px;
     margin: 9px 0 9px 0;
 }
@@ -143,10 +138,9 @@
     padding-bottom: 3px;
 }
 
-.h5-card-description {
+.titre-card-description {
     margin: 5px 0;
-    font-size: 18px;
-    font-weight: 600;
+
 
 
 }
@@ -193,11 +187,9 @@
     object-fit: cover;
 }
 
-.item-activite > p {
+.titre-activite {
     margin-left: 19px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 19px;
+
 
 
     color: #000000;
