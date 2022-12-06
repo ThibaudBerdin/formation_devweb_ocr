@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;0,900;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --main-bg-color: #FFFFF;
+    --grey: #f2f2f2;
+    --lien: #0065fc;
+    --lien-clair: #deebff;
+}
+
+body {
+    margin: 0 auto 0 auto;
+
+
+}
+
+.container {
+    max-width: 1400px;
+    background: #ffffff;
+    font-family: "Raleway", sans-serif;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+h3 {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.h5-card-description {
+    margin-top: 5px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.recherche-form {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+}
+
+.lien {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    /* Blue */
+    color: #0065fc;
+}
+
+.button {
+    background-color: #0065fc;
+    border-radius: 0px 12px 12px 0px;
+    border: 0;
+    width: 132px;
+    height: 49px;
+    text-align: center;
+    color: white;
+}
+
+.recherche {
+    height: 49px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0 35px 0 35px;
+    border: 0;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.recherche:focus {
+    outline: none;
+}
+
+.button-recherche-mobile {
+    display: none;
+}
+
+.icone-recherche {
+    display: flex;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+    width: 50px;
+    height: 49px;
+}
+
+.icone-recherche > i {
+    margin: auto;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.titre-filter {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+}
+
+.buttons-filter-group {
+    display: flex;
+    gap: 20px;
+
+}
+
+.filter-button {
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    line-height: 20px;
+    white-space: nowrap;
+    padding: 0 30px 0 30px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.filter-button:hover {
+    background-color: #deebff;
+}
+
+.filter-button .fa-heart,
+.fa-dog,
+.fa-person,
+.fa-money-bill-wave,
+.fa-chart-line {
+    color: #0065fc;
+    padding-right: 5px;
+}
+
+.fa-info {
+    color: #0065fc;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.info-span {
+    justify-content: center;
+    padding: 2px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+}
+
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+footer div a {
+    text-decoration: none;
+    color: #000000;
+}
+
+@media all and (max-width: 992px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0 30px 0 30px;
+    }
+
+    .filter {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .buttons-filter-group {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+
+    .sous-titre {
+        font-weight: bold;
+        margin-left: 30px;
+    }
+
+    .recherche-form {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .recherche {
+        width: 70%;
+    }
+
+    .recherche-form .button {
+        display: none;
+    }
+
+    .icone-recherche {
+        width: 10%;
+    }
+
+    .button-recherche-mobile {
+        display: block;
+        background-color: #0065fc;
+        border-radius: 0px 12px 12px 0px;
+        border: 0;
+        height: 49px;
+        text-align: center;
+        color: white;
+        padding: 0 20px;
+        width: 10%;
+    }
+
+    .filter {
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+    .titre-filter {
+        width: 100%;
+        padding-left: 5px;
+        text-align: left;
+    }
+
+    .buttons-filter-group {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .filter-button {
+        height: 50px;
+        margin-bottom: 10px;
+        width: 45%;
+        text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+
+    .info {
+        display: flex;
+
+        margin-left: 30px;
+    }
+
+    .info-span {
+        margin-right: 10px;
+    }
+
+    footer div {
+        width: 100%;
+        text-align: left;
+        padding-left: 30px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .buttons-filter-group {
+        gap: 15px;
+    }
+
+    .filter-button {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    body {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 0 auto
+    }
+}
